@@ -7,6 +7,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneContact", "OneContact\On
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneContact.Tests", "OneContact.Tests\OneContact.Tests.csproj", "{4E2BB10A-D65F-4D4F-9A4B-C682101D16DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{0FAC1CA5-F952-492C-8A5C-6A86AEC90F68}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{8AF4031D-B25D-45AF-819D-0C6006EF7271}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\OneContact-WAWS-dev.json = PublishScripts\Configurations\OneContact-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8B6A803D-F67C-4E3B-97D0-E588CC983780}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +40,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8AF4031D-B25D-45AF-819D-0C6006EF7271} = {0FAC1CA5-F952-492C-8A5C-6A86AEC90F68}
 	EndGlobalSection
 EndGlobal
